@@ -1,4 +1,4 @@
-package helloobjects;
+package Zdravic;
 
 import java.io.PrintStream;
 

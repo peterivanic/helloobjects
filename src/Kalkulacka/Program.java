@@ -1,4 +1,4 @@
-package kalkulacka;
+package Kalkulacka;
 
 import java.util.Scanner;
 

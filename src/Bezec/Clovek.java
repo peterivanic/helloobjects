@@ -1,9 +1,15 @@
 package Bezec;
 
-public class Bezec {
-    private int unava = 0;
-    public String meno;
-    public int vek;
+public class Clovek {
+    protected int unava;
+    protected String meno;
+    protected int vek;
+
+    public Clovek(int unava, String meno, int vek) {
+        this.unava = unava;
+        this.meno = meno;
+        this.vek = vek;
+    }
 
     public void bez(int km) {
         if (unava < 20) {
@@ -18,6 +24,9 @@ public class Bezec {
         if (unava > 0) {
             for (int i = 0; i <= h; i++)
                 unava -= 10;
+            if (unava<0){
+                unava=0;
+            }
         }
     }
     public String toString() {

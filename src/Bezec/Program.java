@@ -1,20 +1,15 @@
 package Bezec;
 
-import java.util.SortedMap;
-
-public class Ludia {
+public class Program {
     public static void main(String[] args) {
-        Bezec karol = new Bezec();
-        karol.meno = "Karel Nový";
-        karol.vek = 25;
 
+        Javista karol = new Javista(0,"Karel Nový",25,"IDEA");
         System.out.println(karol.toString());
         karol.bez(10);
         karol.bez(10);
-        karol.spi(2);
+        karol.programuj(5);
         karol.bez(10);
-
-
-
+        karol.spi(8);
+        karol.programuj(100);
     }
 }

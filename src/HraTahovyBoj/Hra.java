@@ -2,18 +2,18 @@ package HraTahovyBoj;
 
 public class Hra {
     public static void main(String[] args) {
-        Kocka sestStena = new Kocka();
+
         Kocka desatStena = new Kocka(10);
+        Bojovnik hrdina = new Bojovnik("Zalgoren", 100, 15, 10, desatStena);
+        Bojovnik shadow = new Bojovnik("Shadow", 65, 15, 5, desatStena);
+        Bojovnik tank = new Bojovnik("Tank", 170, 10, 10, desatStena);
+        Bojovnik mag = new Mag("Geralt",100,10,10,100,25,desatStena);
 
-        System.out.println(sestStena);
-        for (int i = 0 ; i <10; i++){
-            System.out.print(sestStena.hod()+ "  ");
-        }
-        System.out.println();
+        Arena arena = new Arena();
+        arena.Arena(mag,hrdina,desatStena);
+        arena.zapas();
 
-        System.out.println(desatStena);
-        for (int i =0;i<10;i++){
-            System.out.print(desatStena.hod()+"   ");
-        }
+
+
     }
 }

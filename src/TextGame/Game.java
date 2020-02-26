@@ -30,14 +30,13 @@ public class Game {
         hrad.SusV(les1);
         les2.SusV(rybnik);
         les2.SusZ(rozcesti);
+        rybnik.SusZ(les2);
 
         Hra hra = new Hra();
-        hra.lokacia = dum;
+        hra.lokacia = rybnik;
 
         while (hra.volba != "konec"){
             hra.pohyb();
         }
-
     }
-
 }

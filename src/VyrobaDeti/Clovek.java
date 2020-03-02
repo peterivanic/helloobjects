@@ -1,8 +1,7 @@
-package Deti;
+package VyrobaDeti;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
-import java.util.ArrayList;
 
 public class Clovek implements Comparable {
     private String meno;

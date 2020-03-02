@@ -1,4 +1,4 @@
-package Deti;
+package VyrobaDeti;
 
 import java.util.ArrayList;
 import java.util.Collections;

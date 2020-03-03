@@ -28,7 +28,6 @@ public class Main {
         ludia.add(michaela);
         Collections.sort(ludia);
 
-
         for (Clovek c : ludia){
             System.out.println(c.toString());
         }
